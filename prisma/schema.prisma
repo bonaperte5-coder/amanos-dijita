@@ -1,0 +1,89 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  createdAt DateTime @default(now())
+}
+
+model Slider {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  buttonText  String
+  buttonUrl   String
+  imageUrl    String?
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Service {
+  id              Int      @id @default(autoincrement())
+  slug            String   @unique
+  cardTitle       String
+  cardDescription String
+  longDescription String   @db.Text
+  icon            String
+  features        Json     @default("[]")
+  processSteps    Json     @default("[]")
+  ctaText         String
+  ctaUrl          String
+  isActive        Boolean  @default(true)
+  updatedAt       DateTime @updatedAt
+}
+
+model Media {
+  id        Int      @id @default(autoincrement())
+  filename  String
+  url       String
+  altText   String   @default("")
+  size      Int
+  createdAt DateTime @default(now())
+}
+
+model SeoSetting {
+  id              Int      @id @default(autoincrement())
+  pageSlug        String   @unique
+  title           String
+  description     String
+  canonicalUrl    String?
+  ogTitle         String?
+  ogDescription   String?
+  ogImage         String?
+  robots          String   @default("index,follow")
+  customHeadCode  String?  @db.Text
+  updatedAt       DateTime @updatedAt
+}
+
+model SiteSettings {
+  id           Int    @id @default(autoincrement())
+  phone        String @default("")
+  email        String @default("")
+  address      String @default("")
+  workingHours String @default("")
+  instagram    String @default("")
+  linkedin     String @default("")
+  twitter      String @default("")
+  facebook     String @default("")
+  tiktok       String @default("")
+}
+
+model ContactMessage {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  subject   String
+  message   String   @db.Text
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
