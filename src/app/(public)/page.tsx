@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { ChevronRight, ArrowRight, Star, Palette, TrendingUp, Zap, HeartHandshake } from 'lucide-react'
+import { ChevronRight, ArrowRight, Star, Palette, TrendingUp, Zap, HeartHandshake, Sparkles, Video, BarChart3, MessageCircle } from 'lucide-react'
 import HeroSection from '@/components/HeroSection'
 import StatsSection from '@/components/StatsSection'
 
@@ -298,6 +298,165 @@ export default function HomePage() {
               </div>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* ── Sosyal Medya Yönetimi ── */}
+      <section className="py-28 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#FFF5F0] via-[#FFFAF8] to-[#F0F5FF] pointer-events-none" />
+        <div className="relative max-w-7xl mx-auto px-4">
+
+          {/* Başlık */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#FF6B35]/08 border border-[#FF6B35]/20 rounded-full mb-5">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FF6B35]" />
+              <span className="text-[11px] font-bold tracking-[0.15em] uppercase text-[#FF6B35] font-mono">Sosyal Medya Yönetimi</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">
+              <span className="text-[#0A1628]">Takipçiniz Değil —</span>
+              <br />
+              <span className="gradient-text">Müşteriniz Olsun</span>
+            </h2>
+            <p className="text-[#5C6E8A] text-lg max-w-2xl mx-auto">
+              Rastgele paylaşım değil, strateji. Instagram&apos;dan TikTok&apos;a içerik üretiminden reklam yönetimine kadar sosyal medyanızı büyütüyoruz.
+            </p>
+          </div>
+
+          {/* İki Kolon: Hizmetler + İstatistikler */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+
+            {/* Sol — Hizmet Listesi */}
+            <div className="flex flex-col gap-4">
+              {[
+                { icon: Sparkles, title: 'Özgün İçerik Üretimi', desc: 'Markanıza özel görsel ve video içerikler — takipçiler paylaşmak ister, rakipler kıskandırır.', accent: '#FF6B35' },
+                { icon: Video, title: 'Reels & Kısa Video', desc: 'Algoritmayı arkaya alan kısa video formatları. Organik erişiminiz katlanarak büyür.', accent: '#0072FF' },
+                { icon: BarChart3, title: 'Meta Reklam Yönetimi', desc: 'Facebook & Instagram reklamlarıyla hedef kitlenize ulaşın. Her kuruşun nereye gittiğini bilirsiniz.', accent: '#5B21B6' },
+                { icon: TrendingUp, title: 'Aylık Şeffaf Raporlama', desc: 'Takipçi, erişim, etkileşim — her metriği raporla görürsünüz.', accent: '#059669' },
+              ].map((item) => (
+                <div key={item.title} className="glass-card p-5 flex items-start gap-4 group hover:border-[#FF6B35]/20 transition-colors">
+                  <div
+                    className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                    style={{ background: `${item.accent}12`, border: `1px solid ${item.accent}25` }}
+                  >
+                    <item.icon size={17} style={{ color: item.accent }} />
+                  </div>
+                  <div>
+                    <h4 className="text-[#0A1628] font-semibold text-sm mb-0.5">{item.title}</h4>
+                    <p className="text-[#5C6E8A] text-xs leading-relaxed">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+
+              <div className="flex gap-3 mt-2">
+                <Link
+                  href="/sosyal-medya"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-gradient-to-r from-[#FF6B35] to-[#FF8C5A] rounded-2xl text-white font-bold text-sm hover:opacity-90 transition-opacity shadow-[0_4px_20px_rgba(255,107,53,0.3)]"
+                >
+                  Detayları İncele <ChevronRight size={15} />
+                </Link>
+                <a
+                  href="https://wa.me/905445317980?text=Merhaba%2C%20sosyal%20medya%20y%C3%B6netimi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white border border-[#0072FF]/20 rounded-2xl text-[#0072FF] font-bold text-sm hover:border-[#0072FF]/40 transition-all"
+                >
+                  <MessageCircle size={15} />
+                  WhatsApp
+                </a>
+              </div>
+            </div>
+
+            {/* Sağ — Stat Kartları */}
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { val: '%73', label: 'Kullanıcı, satın almadan önce markanın sosyal medyasını inceliyor', src: 'Sprout Social' },
+                { val: '3.5x', label: 'Tutarlı marka iletişimi dönüşüm oranını artırıyor', src: 'McKinsey' },
+                { val: '%80', label: 'Marka bilinirliği sosyal medya sayesinde artıyor', src: 'Hootsuite' },
+                { val: '4.9 sa', label: "Türkiye'de günlük ortalama sosyal medya kullanım süresi", src: 'DataReportal' },
+              ].map((s) => (
+                <div key={s.val} className="glass-card p-5 flex flex-col gap-2">
+                  <span className="text-3xl font-extrabold font-heading gradient-text">{s.val}</span>
+                  <p className="text-[#5C6E8A] text-xs leading-relaxed">{s.label}</p>
+                  <span className="text-[#8A9BB5] text-[10px] font-mono">{s.src}</span>
+                </div>
+              ))}
+            </div>
+
+          </div>
+
+          {/* Referanslar */}
+          <div className="text-center mb-10">
+            <p className="section-label mb-3">Referanslar</p>
+            <h3 className="text-3xl md:text-4xl font-bold font-heading">
+              <span className="gradient-text">Birlikte Büyüdüğümüz Markalar</span>
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            {[
+              { name: 'Archtwain', logo: '/archtwain.png', platform: 'Instagram', username: 'archtwain', url: 'https://www.instagram.com/archtwain', sector: 'Mimarlık', metric: '+%180 Etkileşim' },
+              { name: 'Koala Bornova', logo: '/koala.png', platform: 'Instagram', username: 'koalabornova', url: 'https://www.instagram.com/koalabornova', sector: 'Gıda & Kafe', metric: '+%240 Erişim' },
+              { name: 'Theragone', logo: '/theragone.png', platform: 'Instagram', username: 'theragonetr', url: 'https://www.instagram.com/theragonetr', sector: 'Sağlık', metric: '+%160 Takipçi' },
+            ].map((r) => (
+              <a
+                key={r.name}
+                href={r.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="glass-card p-6 flex flex-col gap-4 group hover:border-[#FF6B35]/30 transition-all"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-2xl bg-white border border-slate-200 flex items-center justify-center overflow-hidden flex-shrink-0 shadow-sm">
+                    <Image src={r.logo} alt={r.name} width={48} height={48} className="object-contain" />
+                  </div>
+                  <div>
+                    <h4 className="text-[#0A1628] font-bold text-sm">{r.name}</h4>
+                    <p className="text-[#8A9BB5] text-xs">{r.sector}</p>
+                    <p className="text-[#0072FF] text-xs font-mono">@{r.username}</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-[#FF6B35]/06 to-[#FF8C5A]/04 border border-[#FF6B35]/15 rounded-xl">
+                  <TrendingUp size={14} className="text-[#FF6B35] flex-shrink-0" />
+                  <span className="text-[#FF6B35] font-bold text-sm">{r.metric}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-[#8A9BB5] text-xs">{r.platform}</span>
+                  <span className="inline-flex items-center gap-1 text-[#0072FF] text-xs font-semibold group-hover:gap-2 transition-all">
+                    Profili Gör <ChevronRight size={11} />
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Sosyal Medya Müşteri Yorumları */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              { name: 'Zeynep Aktaş', role: 'Butik Kafe Sahibi', avatar: 'ZA', text: "İlk ay takipçilerimiz iki katına çıktı. İçerikleri çok kaliteli, müşterilerimiz Instagram'dan geliyor artık.", rating: 5 },
+              { name: 'Kemal Şahin', role: 'E-ticaret Girişimcisi', avatar: 'KŞ', text: 'Meta reklamlarını devrettim, reklam maliyetim düştü, satışlarım arttı. Aylık raporlar çok şeffaf.', rating: 5 },
+              { name: 'Derya Yıldız', role: 'Kozmetik Markası', avatar: 'DY', text: 'Reels içerikleri gerçekten viral oldu. Organik büyüme hiç beklemediğim kadar hızlı oldu.', rating: 5 },
+            ].map((t) => (
+              <div key={t.name} className="glass-card p-7 relative">
+                <span className="quote-mark">&ldquo;</span>
+                <div className="flex gap-0.5 mb-4 mt-4">
+                  {Array.from({ length: t.rating }).map((_, i) => (
+                    <Star key={i} size={13} className="text-[#FF6B35] fill-[#FF6B35]" />
+                  ))}
+                </div>
+                <p className="text-[#5C6E8A] text-sm leading-relaxed mb-6">{t.text}</p>
+                <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
+                  <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#FF6B35] to-[#FF8C5A] flex items-center justify-center text-white text-xs font-bold">
+                    {t.avatar}
+                  </div>
+                  <div>
+                    <p className="text-[#0A1628] text-sm font-semibold">{t.name}</p>
+                    <p className="text-[#8A9BB5] text-xs">{t.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
