@@ -23,7 +23,6 @@ import {
 
 const platforms = [
   { name: 'Instagram', color: '#E1306C' },
-  { name: 'TikTok', color: '#010101' },
   { name: 'LinkedIn', color: '#0077B5' },
   { name: 'Facebook', color: '#1877F2' },
   { name: 'X (Twitter)', color: '#1DA1F2' },
@@ -206,7 +205,7 @@ const faqs = [
   },
   {
     q: 'Kaç platformu yönetebilirsiniz?',
-    a: 'Instagram, TikTok, Facebook, LinkedIn ve X (Twitter) platformlarını yönetiyoruz. Hangi platformların size uygun olduğunu görüşmede birlikte belirleyebiliriz.',
+    a: 'Instagram, Facebook, LinkedIn ve X (Twitter) platformlarını yönetiyoruz. Hangi platformların size uygun olduğunu görüşmede birlikte belirleyebiliriz.',
   },
   {
     q: 'İçerikler için fotoğraf ve video çekimi yapıyor musunuz?',
