@@ -97,9 +97,9 @@ export default function Footer() {
             <h4 className="text-[#0A1628] font-semibold text-sm mb-5 tracking-wide">İletişim</h4>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+90544531798" className="flex items-center gap-2.5 text-[#5C6E8A] hover:text-[#0072FF] text-sm transition-colors group">
+                <a href="tel:+905445317980" className="flex items-center gap-2.5 text-[#5C6E8A] hover:text-[#0072FF] text-sm transition-colors group">
                   <Phone size={14} className="text-[#0072FF] flex-shrink-0" />
-                  0544 531 798
+                  0544 531 7980
                 </a>
               </li>
               <li>

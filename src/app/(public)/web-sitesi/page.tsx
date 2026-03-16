@@ -294,7 +294,7 @@ export default function WebSitesiPage() {
               Ücretsiz Teklif Al <ArrowRight size={17} />
             </Link>
             <a
-              href="https://wa.me/905000000000?text=Merhaba%2C%20web%20sitesi%20hakkında%20bilgi%20almak%20istiyorum."
+              href="https://wa.me/905445317980?text=Merhaba%2C%20web%20sitesi%20hakkında%20bilgi%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white border border-[#0072FF]/20 rounded-2xl text-[#0072FF] font-bold text-base hover:border-[#0072FF]/40 hover:shadow-md transition-all w-full sm:w-auto justify-center"
@@ -461,7 +461,7 @@ export default function WebSitesiPage() {
                 Teklif İste <ArrowRight size={15} />
               </Link>
               <a
-                href="https://wa.me/905000000000?text=Merhaba%2C%20web%20sitesi%20hakkında%20bilgi%20almak%20istiyorum."
+                href="https://wa.me/905445317980?text=Merhaba%2C%20web%20sitesi%20hakkında%20bilgi%20almak%20istiyorum."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-white border border-[#0072FF]/20 rounded-xl text-[#0072FF] font-bold text-sm hover:border-[#0072FF]/40 transition-all"
@@ -619,7 +619,7 @@ export default function WebSitesiPage() {
           <div className="text-center mt-10">
             <p className="text-[#5C6E8A] text-sm mb-4">Başka sorunuz mu var?</p>
             <a
-              href="https://wa.me/905000000000?text=Merhaba%2C%20web%20sitesi%20hakkında%20sorum%20var."
+              href="https://wa.me/905445317980?text=Merhaba%2C%20web%20sitesi%20hakkında%20sorum%20var."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-[#0072FF]/20 rounded-xl text-[#0072FF] font-semibold text-sm hover:border-[#0072FF]/40 transition-all"
@@ -687,7 +687,7 @@ export default function WebSitesiPage() {
               Ücretsiz Teklif Al <ArrowRight size={20} />
             </Link>
             <a
-              href="https://wa.me/905000000000?text=Merhaba%2C%20web%20sitesi%20hakkında%20bilgi%20almak%20istiyorum."
+              href="https://wa.me/905445317980?text=Merhaba%2C%20web%20sitesi%20hakkında%20bilgi%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-5 bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl text-white font-bold text-lg transition-all w-full sm:w-auto justify-center"

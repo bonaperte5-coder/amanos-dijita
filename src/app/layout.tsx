@@ -44,7 +44,7 @@ const organizationSchema = {
       '@id': 'https://amanosdijital.com/#organization',
       name: 'Amanos Dijital',
       url: 'https://amanosdijital.com',
-      telephone: '+905445317984',
+      telephone: '+905445317980',
       email: 'info@amanosdijital.com',
       description:
         'İzmir merkezli dijital ajans. Web sitesi tasarımı, logo, SEO ve sosyal medya yönetimi hizmetleri.',
@@ -59,7 +59,7 @@ const organizationSchema = {
       '@id': 'https://amanosdijital.com/#localbusiness',
       name: 'Amanos Dijital',
       url: 'https://amanosdijital.com',
-      telephone: '+905445317984',
+      telephone: '+905445317980',
       email: 'info@amanosdijital.com',
       description:
         'İzmir merkezli dijital ajans. Web sitesi tasarımı, logo, SEO ve sosyal medya yönetimi hizmetleri.',

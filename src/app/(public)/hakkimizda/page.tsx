@@ -349,7 +349,7 @@ export default function HakkimizdaPage() {
               Ücretsiz Teklif Al <ArrowRight size={20} />
             </Link>
             <a
-              href="https://wa.me/905000000000?text=Merhaba%2C%20dijital%20hizmetler%20hakkında%20bilgi%20almak%20istiyorum."
+              href="https://wa.me/905445317980?text=Merhaba%2C%20dijital%20hizmetler%20hakkında%20bilgi%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-5 bg-white/10 hover:bg-white/20 border border-white/20 rounded-2xl text-white font-bold text-lg transition-all w-full sm:w-auto justify-center"

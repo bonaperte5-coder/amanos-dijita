@@ -6,9 +6,9 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Telefon',
-    value: '0544 531 798',
+    value: '0544 531 7980',
     sub: 'Haftaiçi 09:00 — 18:00',
-    href: 'tel:+90544531798',
+    href: 'tel:+905445317980',
   },
   {
     icon: Mail,
@@ -103,7 +103,7 @@ export default function ContactContent() {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/90544531798"
+            href="https://wa.me/905445317980"
             target="_blank"
             rel="noopener noreferrer"
             className="glass-card p-5 flex items-center gap-3 group cursor-pointer"
