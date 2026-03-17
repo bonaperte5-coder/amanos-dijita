@@ -111,7 +111,7 @@ export default function Footer() {
               <li>
                 <span className="flex items-start gap-2.5 text-[#5C6E8A] text-sm">
                   <MapPin size={14} className="text-[#0072FF] flex-shrink-0 mt-0.5" />
-                  İzmir, Türkiye
+                  İzmir & Hatay, Türkiye
                 </span>
               </li>
             </ul>

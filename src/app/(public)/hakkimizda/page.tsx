@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Hakkımızda | Amanos Dijital',
-  description: 'İzmir merkezli dijital ajansımız. Yazılım, tasarım, SEO ve sosyal medya alanında deneyimli genç ekibimizi tanıyın.',
+  description: 'İzmir ve Hatay merkezli dijital ajansımız. Yazılım, tasarım, SEO ve sosyal medya alanında deneyimli genç ekibimizi tanıyın.',
   alternates: { canonical: 'https://amanosdijital.com/hakkimizda' },
   openGraph: {
     title: 'Hakkımızda | Amanos Dijital',
-    description: 'İzmir merkezli dijital ajansımız. Yazılım, tasarım, SEO ve sosyal medya alanında deneyimli genç ekibimizi tanıyın.',
+    description: 'İzmir ve Hatay merkezli dijital ajansımız. Yazılım, tasarım, SEO ve sosyal medya alanında deneyimli genç ekibimizi tanıyın.',
     url: 'https://amanosdijital.com/hakkimizda',
     siteName: 'Amanos Dijital',
     locale: 'tr_TR',
@@ -52,7 +52,7 @@ const milestones = [
   {
     year: '2022',
     title: 'İlk 20 Proje',
-    desc: 'KOBİ\'lere odaklanarak İzmir genelinde 20+ projeyi başarıyla teslim ettik. Her proje bir referans, her müşteri bir öğretmen oldu.',
+    desc: 'KOBİ\'lere odaklanarak İzmir ve Hatay genelinde 20+ projeyi başarıyla teslim ettik. Her proje bir referans, her müşteri bir öğretmen oldu.',
   },
   {
     year: '2023',
@@ -62,7 +62,7 @@ const milestones = [
   {
     year: '2024',
     title: '50+ Proje & Türkiye Geneli',
-    desc: 'İzmir\'den tüm Türkiye\'ye uzandık. 50\'den fazla projeyle büyümeye devam ediyoruz — ve henüz başlangıçtayız.',
+    desc: 'İzmir ve Hatay\'dan tüm Türkiye\'ye uzandık. 50\'den fazla projeyle büyümeye devam ediyoruz — ve henüz başlangıçtayız.',
   },
 ]
 
@@ -116,7 +116,7 @@ export default function HakkimizdaPage() {
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#0072FF]/08 border border-[#0072FF]/18 rounded-full mb-6">
             <MapPin size={11} className="text-[#0072FF]" />
             <span className="text-[11px] font-bold tracking-[0.15em] uppercase text-[#0072FF] font-mono">
-              İzmir Merkezli · Türkiye Geneli
+              İzmir & Hatay · Türkiye Geneli
             </span>
           </div>
 
@@ -171,7 +171,7 @@ export default function HakkimizdaPage() {
           {/* Right — Stats */}
           <div className="grid grid-cols-2 gap-4">
             {[
-              { icon: Users, number: '40+', label: 'Mutlu Müşteri', sub: 'İzmir ve Türkiye geneli' },
+              { icon: Users, number: '40+', label: 'Mutlu Müşteri', sub: 'İzmir, Hatay ve Türkiye geneli' },
               { icon: Award, number: '50+', label: 'Teslim Edilen Proje', sub: 'Web, logo, SEO, sosyal medya' },
               { icon: Rocket, number: '7 Gün', label: 'Ort. Teslimat', sub: 'Söz verileni teslim ederiz' },
               { icon: Target, number: '%100', label: 'Memnuniyet', sub: 'Her projede öncelik' },

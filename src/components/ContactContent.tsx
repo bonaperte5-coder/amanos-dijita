@@ -20,7 +20,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Konum',
-    value: 'İzmir, Türkiye',
+    value: 'İzmir & Hatay, Türkiye',
     sub: 'Online görüşme de mümkün',
     href: '#',
   },

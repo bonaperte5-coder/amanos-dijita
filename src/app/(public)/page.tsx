@@ -7,7 +7,7 @@ import StatsSection from '@/components/StatsSection'
 
 export const metadata: Metadata = {
   title: 'Amanos Dijital — Web Sitesi, Logo, SEO & Sosyal Medya Hizmetleri',
-  description: 'İzmir\'den tüm Türkiye\'ye dijital çözümler. Web sitesi kurma, logo tasarımı, SEO ve sosyal medya yönetimi. Ücretsiz teklif alın.',
+  description: 'İzmir ve Hatay\'dan tüm Türkiye\'ye dijital çözümler. Web sitesi kurma, logo tasarımı, SEO ve sosyal medya yönetimi. Ücretsiz teklif alın.',
   alternates: { canonical: 'https://amanosdijital.com' },
   openGraph: {
     title: 'Amanos Dijital — Dijital Çözüm Ortağınız',

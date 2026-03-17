@@ -115,7 +115,7 @@ export default function HeroSection() {
           <span className="w-1.5 h-1.5 rounded-full bg-[#0072FF] shadow-[0_0_6px_rgba(0,114,255,0.6)] animate-pulse" />
           <span className="font-mono tracking-wider uppercase">Dijital Ajans Hizmetleri</span>
           <span className="w-px h-3 bg-slate-300" />
-          <span className="text-[#0A1628] font-semibold">İzmir</span>
+          <span className="text-[#0A1628] font-semibold">İzmir & Hatay</span>
         </div>
 
         {/* Headline */}

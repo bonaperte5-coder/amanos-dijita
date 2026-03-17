@@ -33,7 +33,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://amanosdijital.com'),
   title: 'Amanos Dijital — Dijital Çözüm Ortağınız',
-  description: 'Web sitesi, logo tasarım, SEO ve sosyal medya yönetimi hizmetleri.',
+  description: 'İzmir ve Hatay merkezli dijital ajans. Web sitesi, logo tasarım, SEO ve sosyal medya yönetimi hizmetleri.',
 }
 
 const organizationSchema = {
@@ -47,10 +47,11 @@ const organizationSchema = {
       telephone: '+905445317980',
       email: 'info@amanosdijital.com',
       description:
-        'İzmir merkezli dijital ajans. Web sitesi tasarımı, logo, SEO ve sosyal medya yönetimi hizmetleri.',
+        'İzmir ve Hatay merkezli dijital ajans. Web sitesi tasarımı, logo, SEO ve sosyal medya yönetimi hizmetleri.',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'İzmir',
+        addressRegion: 'Hatay',
         addressCountry: 'TR',
       },
     },
@@ -62,12 +63,13 @@ const organizationSchema = {
       telephone: '+905445317980',
       email: 'info@amanosdijital.com',
       description:
-        'İzmir merkezli dijital ajans. Web sitesi tasarımı, logo, SEO ve sosyal medya yönetimi hizmetleri.',
+        'İzmir ve Hatay merkezli dijital ajans. Web sitesi tasarımı, logo, SEO ve sosyal medya yönetimi hizmetleri.',
       priceRange: '₺₺',
-      areaServed: 'TR',
+      areaServed: ['İzmir', 'Hatay', 'TR'],
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'İzmir',
+        addressRegion: 'Hatay',
         addressCountry: 'TR',
       },
       openingHoursSpecification: [
