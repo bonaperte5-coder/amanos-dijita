@@ -68,32 +68,11 @@ const milestones = [
 
 const team = [
   {
-    name: 'Ali Yılmaz',
-    role: 'Full-Stack Geliştirici & Kurucu',
-    avatar: 'AY',
-    exp: '2 yıl deneyim',
-    tags: ['Next.js', 'Node.js', 'PostgreSQL'],
-  },
-  {
-    name: 'Zeynep Kaya',
-    role: 'UI/UX & Grafik Tasarımcı',
-    avatar: 'ZK',
-    exp: '2 yıl deneyim',
-    tags: ['Figma', 'Brand Identity', 'Motion'],
-  },
-  {
     name: 'Sümeyye Çırak',
     role: 'Grafik Tasarımcı',
     avatar: 'SÇ',
     exp: '2 yıl deneyim',
     tags: ['Grafik Tasarım', 'Adobe', 'Canva'],
-  },
-  {
-    name: 'Selin Arslan',
-    role: 'Sosyal Medya Uzmanı',
-    avatar: 'SA',
-    exp: '2 yıl deneyim',
-    tags: ['Instagram', 'Meta Ads', 'İçerik'],
   },
   {
     name: 'Yüksel Günay',
