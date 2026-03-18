@@ -96,6 +96,13 @@ const team = [
     tags: ['Instagram', 'Meta Ads', 'İçerik'],
   },
   {
+    name: 'Yüksel Günay',
+    role: 'Sosyal Medya Uzmanı',
+    avatar: 'YG',
+    exp: '2 yıl deneyim',
+    tags: ['Reels Çekimi', 'Instagram Reklamı', 'Video Edit'],
+  },
+  {
     name: 'Mısra Kanarya',
     role: 'SEO & Dijital Pazarlama',
     avatar: 'MK',
@@ -277,7 +284,7 @@ export default function HakkimizdaPage() {
               Her uzmanlık alanında deneyimli, bir arada güçlü.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {team.map((member) => (
               <div key={member.name} className="glass-card p-6 group flex flex-col items-center text-center">
                 <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0072FF] to-[#5B21B6] flex items-center justify-center text-white font-bold text-lg mb-4 group-hover:shadow-[0_8px_25px_rgba(0,114,255,0.25)] transition-shadow">
