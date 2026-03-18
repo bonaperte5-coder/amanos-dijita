@@ -68,6 +68,20 @@ const milestones = [
 
 const team = [
   {
+    name: 'Cemali Eryılmaz',
+    role: 'Kurucu & Full-Stack Geliştirici',
+    avatar: 'CE',
+    exp: '2 yıl deneyim',
+    tags: ['Web Geliştirme', 'Yönetim', 'Full-Stack'],
+  },
+  {
+    name: 'Samet Talha Tozlu',
+    role: 'Full-Stack Geliştirici',
+    avatar: 'ST',
+    exp: '2 yıl deneyim',
+    tags: ['Web Geliştirme', 'Full-Stack', 'Yazılım'],
+  },
+  {
     name: 'Sümeyye Çırak',
     role: 'Grafik Tasarımcı',
     avatar: 'SÇ',
